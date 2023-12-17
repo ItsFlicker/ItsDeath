@@ -1,0 +1,46 @@
+general:
+  print-unset-entity: true
+  print-unset-cause: true
+
+events:
+  pre-process: |-
+    if perm "itsdeath.keepinv" then {
+      exit
+    }
+  post-process: [ ]
+  after-respawn: |-
+    sound ITEM.SHIELD.BLOCK
+    title inline "§3§l重生成功, §2§l{{ sender }}!" subtitle "§7§l珍爱生命, 远离死亡." by 10 40 10
+  after-retrieve: |-
+    sound ITEM.BOTTLE.FILL
+    title "§a§l索取成功" by 10 40 10
+
+worlds:
+  world:
+    # ALL -> 掉落全部物品
+    # KEEP -> 不掉落物品
+    # int -> 随机掉落多少格子的物品
+    item-drop: ALL
+    # 掉落多少经验
+    # 0 -> 不掉落经验
+    # -1 -> 按照原版算法
+    exp-drop: 0.15
+    message: SERVER
+  world_nether:
+    item-drop: ALL
+    exp-drop: 0.3
+    message: SERVER
+  world_the_end:
+    item-drop: ALL
+    exp-drop: 0.5
+    message: SERVER
+  spawn:
+    item-drop: KEEP
+    exp-drop: 0
+    message: SERVER
+
+death-chest:
+  content:
+    - '{message}'
+    - '{head}'
+  expire: 3h

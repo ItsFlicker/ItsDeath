@@ -1,183 +1,250 @@
 unknown:
-  - '&8[&c☠&8] &6{P} &7die了.'
-  - '&8[&c☠&8] &6{P} &7人间蒸发了.'
-  - '&8[&c☠&8] &6{P} &7再起不能.'
+  - '&8[&c☠&8] %1$s &7die了'
+  - '&8[&c☠&8] %1$s &7人间蒸发了'
+  - '&8[&c☠&8] %1$s &7再起不能'
+
 cause:
-  CONTACT: # 仙人掌
-    - '&8[&c☠&8] &6{P} &7被扎死'
-    - '&8[&c☠&8] &6{P} &7抱住了死神'
-  SUFFOCATION: # 窒息
-    - '&8[&c☠&8] &6{P} &7智熄了'
-    - '&8[&c☠&8] &6{P} &7被方块堵住了呼吸道'
-  FALL: # 摔落
-    - '&8[&c☠&8] &6{P} &7脚滑了一下'
-    - '&8[&c☠&8] &6{P} &7摔得骨灰都不剩'
-    - '&8[&c☠&8] &6{P} &7摔烂了腿'
-  FIRE: # (站在火焰中时)火焰
-    - '&8[&c☠&8] &6{P} &7被烈火吞噬'
-    - '&8[&c☠&8] &6{P} &7被烤得酥脆，好吃(╹ڡ╹ )！'
-    - '&8[&c☠&8] &6{P} &7外焦里嫩'
-  FIRE_TICK: # (离开火焰时)火焰
-    - '&8[&c☠&8] &6{P} &7被烧死了'
-    - '&8[&c☠&8] &6{P} &7外焦里嫩'
-    - '&8[&c☠&8] &6{P} &7被烤得酥脆，好吃(╹ڡ╹ )！'
-  LAVA: # 岩浆
-    - '&8[&c☠&8] &6{P} &7在岩浆里游泳...'
-    - '&8[&c☠&8] &6{P} &7被熔岩烧死了!'
-  DROWNING: #溺水
-    - '&8[&c☠&8] &6{P} &7溺水而亡...'
-    - '&8[&c☠&8] &6{P} &7游泳失败'
-    - '&8[&c☠&8] &6{P} &7试图用水洗肺'
-    - '&8[&c☠&8] &6{P} &7与水融为了一体'
-    - '&8[&c☠&8] &6{P} &7由于水太深，把握不住而死'
-  BLOCK_EXPLOSION: # 方块爆炸
-    - '&8[&c☠&8] &6{P}&7:我裂开来'
-  SUICIDE: # 自杀
-    - '&8[&c☠&8] &6{P} &7结束了自己的生命...'
-  POISON: # 活塞挤压
-    - '&8[&c☠&8] &6{P} &7被活塞碾死'
-  VOID: # 虚空
-    - '&8[&c☠&8] &6{P} &7掉入虚空了...'
-    - '&8[&c☠&8] &6{P} &7被虚空吞噬了!'
-    - '&8[&c☠&8] &6{P} &7掉出了这个世界.'
-    - '&8[&c☠&8] &6{P} &7投入了虚空的怀抱.'
-  LIGHTNING: # 闪电
-    - '&8[&c☠&8] &6{P} &7装B被雷劈'
-  STARVATION: # 饿死
-    - '&8[&c☠&8] &6{P} &7饿死了，丢人!'
-  MAGIC: # 魔法(药水)
-    - '&8[&c☠&8] &6{P} &7被魔法弄死了'
-  WITHER: # 凋零
-    - '&8[&c☠&8] &6{P} &7凋零了'
-  FALLING_BLOCK: # 坠落的方块
-    - '&8[&c☠&8] &6{P} &7被很牛顿的方块砸扁了'
-  THORNS: # 荆棘附魔
-    - '&8[&c☠&8] &6{P} &7被刺死了'
-  CUSTOM: # 自定义
-    - '&8[&c☠&8] &6{P} &7再起不能.'
-  FLY_INTO_WALL: # 感受到动能
-    - '&8[&c☠&8] &6{P} &7感受到了动能'
-    - '&8[&c☠&8] &6{P} &7的头感受到了牛顿和科里奥利的祝福'
-  DRAGON_BREATH: # 龙息
-    - '&8[&c☠&8] &6{P} &7被龙（nóng）痰所烤焦'
-  HOT_FLOOR: # 岩浆块
-    - '&8[&c☠&8] &6{P} &7发现了地板是岩浆做的'
-  CRAMMING: # 挤压
-    - '&8[&c☠&8] &6{P} &7由于过度挤♂压而死'
-    - '&8[&c☠&8] &6{P} &7被压成肉饼'
-  FREEZE: # 冻死
-    - '&8[&c☠&8] &6{P} &7被冻死了'
+  "death_attack_anvil": "&8[&c☠&8] %1$s &7被坠落的铁砧压扁了"
+  "death_attack_anvil_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时被坠落的铁砧压扁了"
+  "death_attack_arrow": "&8[&c☠&8] %1$s &7被%2$s&7射杀"
+  "death_attack_arrow_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s射杀"
+  "death_attack_badRespawnPoint_link": "刻意的游戏设计"
+  "death_attack_badRespawnPoint_message": "&8[&c☠&8] %1$s &7被%2$s&7杀死了"
+  "death_attack_cactus":
+    - "&8[&c☠&8] %1$s &7被戳死了"
+    - '&8[&c☠&8] %1$s &7抱住了死神'
+  "death_attack_cactus_player": "&8[&c☠&8] %1$s &7在试图逃离%2$s&7时撞上了仙人掌"
+  "death_attack_cramming":
+    - "&8[&c☠&8] %1$s &7因被过度挤压而死"
+    - '&8[&c☠&8] %1$s &7被压成肉饼'
+  "death_attack_cramming_player": "&8[&c☠&8] %1$s &7被%2$s&7挤扁了"
+  "death_attack_dragonBreath":
+    - "&8[&c☠&8] %1$s &7被龙息烤熟了"
+    - '&8[&c☠&8] %1$s &7被龙（nóng）痰所烤焦'
+  "death_attack_dragonBreath_player": "&8[&c☠&8] %1$s &7被%2$s&7的龙息烤熟了"
+  "death_attack_drown":
+    - "&8[&c☠&8] %1$s &7淹死了"
+    - '&8[&c☠&8] %1$s &7溺水而亡...'
+    - '&8[&c☠&8] %1$s &7游泳失败'
+    - '&8[&c☠&8] %1$s &7试图用水洗肺'
+    - '&8[&c☠&8] %1$s &7与水融为了一体'
+    - '&8[&c☠&8] %1$s &7由于水太深，把握不住而死'
+  "death_attack_drown_player": "&8[&c☠&8] %1$s &7在试图逃离%2$s&7时淹死了"
+  "death_attack_dryout": "&8[&c☠&8] %1$s &7因脱水而死"
+  "death_attack_dryout_player": "&8[&c☠&8] %1$s &7在试图逃离%2$s&7时因脱水而死"
+  "death_attack_even_more_magic": "&8[&c☠&8] %1$s &7被不为人知的魔法杀死了"
+  "death_attack_explosion": "&8[&c☠&8] %1$s &7爆炸了"
+  "death_attack_explosion_player": "&8[&c☠&8] %1$s &7被%2$s&7炸死了"
+  "death_attack_explosion_player_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s炸死了"
+  "death_attack_fall": "&8[&c☠&8] %1$s &7落地过猛"
+  "death_attack_fall_player": "&8[&c☠&8] %1$s &7在试图逃离%2$s&7时落地过猛"
+  "death_attack_fallingBlock":
+    - "&8[&c☠&8] %1$s &7被下落的方块压扁了"
+    - "&8[&c☠&8] %1$s &7被很牛顿的方块砸扁了"
+  "death_attack_fallingBlock_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时被下落的方块压扁了"
+  "death_attack_fallingStalactite": "&8[&c☠&8] %1$s &7被坠落的钟乳石刺穿了"
+  "death_attack_fallingStalactite_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时被坠落的钟乳石刺穿了"
+  "death_attack_fireball": "&8[&c☠&8] %1$s &7被%2$s&7用火球烧死了"
+  "death_attack_fireball_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s发射的火球烧死了"
+  "death_attack_fireworks": "&8[&c☠&8] %1$s &7随着一声巨响消失了"
+  "death_attack_fireworks_item": "&8[&c☠&8] %1$s &7随着%2$s&7用%3$s发射的烟花发出的巨响消失了"
+  "death_attack_fireworks_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时随着一声巨响消失了"
+  "death_attack_flyIntoWall":
+    - "&8[&c☠&8] %1$s &7感受到了动能"
+    - '&8[&c☠&8] %1$s &7的头感受到了牛顿和科里奥利的祝福'
+  "death_attack_flyIntoWall_player": "&8[&c☠&8] %1$s &7在试图逃离%2$s&7时感受到了动能"
+  "death_attack_freeze": "&8[&c☠&8] %1$s &7被冻死了"
+  "death_attack_freeze_player": "&8[&c☠&8] %1$s &7被%2$s&7冻死了"
+  "death_attack_generic": "&8[&c☠&8] %1$s &7死了"
+  "death_attack_generic_player": "&8[&c☠&8] %1$s &7死于%2$s&7"
+  "death_attack_genericKill": "&8[&c☠&8] %1$s &7被杀死了"
+  "death_attack_genericKill_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时被杀死了"
+  "death_attack_hotFloor": "&8[&c☠&8] %1$s &7发现了地板是熔岩做的"
+  "death_attack_hotFloor_player": "&8[&c☠&8] %1$s &7因%2$s&7而步入危险之地"
+  "death_attack_inFire":
+    - "&8[&c☠&8] %1$s &7浴火焚身"
+    - '&8[&c☠&8] %1$s &7被烈火吞噬'
+    - '&8[&c☠&8] %1$s &7被烤得酥脆，好吃(╹ڡ╹ )！'
+    - '&8[&c☠&8] %1$s &7外焦里嫩'
+  "death_attack_inFire_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时不慎走入了火中"
+  "death_attack_inWall":
+    - "&8[&c☠&8] %1$s &7在墙里窒息而亡"
+    - '&8[&c☠&8] %1$s &7智熄了'
+    - '&8[&c☠&8] %1$s &7被方块堵住了呼吸道'
+  "death_attack_inWall_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时在墙里窒息而亡"
+  "death_attack_indirectMagic": "&8[&c☠&8] %1$s &7被%2$s&7使用的魔法杀死了"
+  "death_attack_indirectMagic_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s杀死了"
+  "death_attack_lava": "&8[&c☠&8] %1$s &7试图在熔岩里游泳"
+  "death_attack_lava_player": "&8[&c☠&8] %1$s &7在逃离%2$s&7时试图在熔岩里游泳"
+  "death_attack_lightningBolt": "&8[&c☠&8] %1$s &7被闪电击中"
+  "death_attack_lightningBolt_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时被闪电击中"
+  "death_attack_magic": "&8[&c☠&8] %1$s &7被魔法杀死了"
+  "death_attack_magic_player": "&8[&c☠&8] %1$s &7在试图逃离%2$s&7时被魔法杀死了"
+  "death_attack_message_too_long": "抱歉！消息太长，无法完整显示。截断后的消息：%s"
+  "death_attack_mob": "&8[&c☠&8] %1$s &7被%2$s&7杀死了"
+  "death_attack_mob_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s杀死了"
+  "death_attack_onFire":
+    - "&8[&c☠&8] %1$s &7被烧死了"
+    - '&8[&c☠&8] %1$s &7被烈火吞噬'
+    - '&8[&c☠&8] %1$s &7被烤得酥脆，好吃(╹ڡ╹ )！'
+    - '&8[&c☠&8] %1$s &7外焦里嫩'
+  "death_attack_onFire_item": "&8[&c☠&8] %1$s &7在与持有%3$s的%2$s&7战斗时被烤得酥脆"
+  "death_attack_onFire_player": "&8[&c☠&8] %1$s &7 在试图与 %2$s&7 战斗时被烤的酥脆"
+  "death_attack_outOfWorld":
+    - "&8[&c☠&8] %1$s &7掉出了这个世界"
+    - '&8[&c☠&8] %1$s &7掉入虚空了...'
+    - '&8[&c☠&8] %1$s &7被虚空吞噬了!'
+    - '&8[&c☠&8] %1$s &7投入了虚空的怀抱'
+  "death_attack_outOfWorld_player": "&8[&c☠&8] %1$s &7与%2$s&7不共戴天"
+  "death_attack_outsideBorder": "&8[&c☠&8] %1$s &7脱离了这个世界"
+  "death_attack_outsideBorder_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时脱离了这个世界"
+  "death_attack_player":
+    - "&8[&c☠&8] %1$s &7被%2$s&7杀死了"
+    - '&8[&c☠&8] %1$s &7被&b%2$s&7&7处决了'
+  "death_attack_player_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s杀死了"
+  "death_attack_sonic_boom": "&8[&c☠&8] %1$s &7被一道音波尖啸抹除了"
+  "death_attack_sonic_boom_item": "&8[&c☠&8] %1$s &7在试图逃离持有%3$s的%2$s&7时被一道音波尖啸抹除了"
+  "death_attack_sonic_boom_player": "&8[&c☠&8] %1$s &7在试图逃离%2$s&7时被一道音波尖啸抹除了"
+  "death_attack_stalagmite": "&8[&c☠&8] %1$s &7被石笋刺穿了"
+  "death_attack_stalagmite_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时被石笋刺穿了"
+  "death_attack_starve": "&8[&c☠&8] %1$s &7饿死了"
+  "death_attack_starve_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时饿死了"
+  "death_attack_sting": "&8[&c☠&8] %1$s &7被蛰死了"
+  "death_attack_sting_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s蛰死了"
+  "death_attack_sting_player": "&8[&c☠&8] %1$s &7被%2$s&7蛰死了"
+  "death_attack_sweetBerryBush": "&8[&c☠&8] %1$s &7被甜浆果丛刺死了"
+  "death_attack_sweetBerryBush_player": "&8[&c☠&8] %1$s &7在试图逃离%2$s&7时被甜浆果丛刺死了"
+  "death_attack_thorns": "&8[&c☠&8] %1$s &7在试图伤害%2$s&7时被杀"
+  "death_attack_thorns_item": "&8[&c☠&8] %1$s &7在试图伤害%2$s&7时被%3$s杀死"
+  "death_attack_thrown": "&8[&c☠&8] %1$s &7被%2$s&7给砸死了"
+  "death_attack_thrown_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s给砸死了"
+  "death_attack_trident": "&8[&c☠&8] %1$s &7被%2$s&7刺穿了"
+  "death_attack_trident_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s刺穿了"
+  "death_attack_wither": "&8[&c☠&8] %1$s &7凋零了"
+  "death_attack_wither_player": "&8[&c☠&8] %1$s &7在与%2$s&7战斗时凋零了"
+  "death_attack_witherSkull": "&8[&c☠&8] %1$s &7被%2$s&7发射的头颅射杀"
+  "death_attack_witherSkull_item": "&8[&c☠&8] %1$s &7被%2$s&7用%3$s发射的头颅射杀"
+  "death_fell_accident_generic":
+    - "&8[&c☠&8] %1$s &7从高处摔了下来"
+    - "&8[&c☠&8] %1$s &7脚滑了一下"
+    - '&8[&c☠&8] %1$s &7摔得骨灰都不剩'
+    - '&8[&c☠&8] %1$s &7摔烂了腿'
+  "death_fell_accident_ladder": "&8[&c☠&8] %1$s &7从梯子上摔了下来"
+  "death_fell_accident_other_climbable": "&8[&c☠&8] %1$s &7在攀爬时摔了下来"
+  "death_fell_accident_scaffolding": "&8[&c☠&8] %1$s &7从脚手架上摔了下来"
+  "death_fell_accident_twisting_vines": "&8[&c☠&8] %1$s &7从缠怨藤上摔了下来"
+  "death_fell_accident_vines": "&8[&c☠&8] %1$s &7从藤蔓上摔了下来"
+  "death_fell_accident_weeping_vines": "&8[&c☠&8] %1$s &7从垂泪藤上摔了下来"
+  "death_fell_assist": "&8[&c☠&8] %1$s &7因为%2$s&7注定要摔死"
+  "death_fell_assist_item": "&8[&c☠&8] %1$s &7因为%2$s&7使用了%3$s注定要摔死"
+  "death_fell_finish": "&8[&c☠&8] %1$s &7摔伤得太重并被%2$s&7完结了生命"
+  "death_fell_finish_item": "&8[&c☠&8] %1$s &7摔伤得太重并被%2$s&7用%3$s完结了生命"
+  "death_fell_killer": "&8[&c☠&8] %1$s &7注定要摔死"
 
 entity:
-  PLAYER: # 玩家
-    - '&8[&c☠&8] &6{P} &7被 &b{D} &7打死了.'
-    - '&8[&c☠&8] &6{P} &7被 &b{D} &7处决了.'
-  ELDER_GUARDIA: # 远古守卫者
-    - '&8[&c☠&8] &6{P} &7被{D}杀死了'
-  WITHER_SKELETON: # 凋零骷髅
-    - '&8[&c☠&8] &6{P} &7被{D}吓死了'
-  STRAY: # 流浪者
-    - '&8[&c☠&8] &6{P} &7被{D}冻住了血液'
-  ARROW: # 箭(由发射器射出)
-    - '&8[&c☠&8] &6{P} &7被箭射穿'
-    - '&8[&c☠&8] &6{P} &7被一箭穿心'
-  FIREBALL: # 火球(由命令召唤)
-    - '&8[&c☠&8] &6{P} &7被火球烧死'
-  SMALL_FIREBALL: # 小火球(由发射器射出)
-    - '&8[&c☠&8] &6{P} &7被火球烧死'
-  WITHER_SKULL: # 飞行的凋灵头颅(由命令召唤)
-    - '&8[&c☠&8] &6{P} &7被凋灵头炸死了'
-  FIREWORK: # 烟花
-    - '&8[&c☠&8] &6{P} &7随着一声巨响爆炸了'
-    - '&8[&c☠&8] &6{P} &7炸了'
-  HUSK: # 尸壳
-    - '&8[&c☠&8] &6{P} &7被{D}啃成一具空壳'
-  SPECTRAL_ARROW: # 光灵箭(由发射器射出)
-    - '&8[&c☠&8] &6{P} &7被射死了'
-  SHULKER_BULLET: # 潜影贝的导弹(由命令召唤)
-    - '&8[&c☠&8] &6{P} &7被导弹射死了'
-  ZOMBIE_VILLAGER: # 僵尸村民
-    - '&8[&c☠&8] &6{P} &7被{D}咬死了'
-  EVOKER_FANGS: # 唤魔者的尖牙(由命令召唤)
-    - '&8[&c☠&8] &6{P} &7被尖牙咬到了下体'
-  EVOKER: # 唤魔者
-    - '&8[&c☠&8] &6{P} &7被{D}弄死了'
-  VEX: # 恼鬼
-    - '&8[&c☠&8] &6{P} &7被{D}烦死了'
-  VINDICATOR: # 卫道士
-    - '&8[&c☠&8] &6{P} &7被{D}一斧头劈死'
-  ILLUSIONER: # 幻术师
-    - '&8[&c☠&8] &6{P} &7被{D}迷惑了双眼'
-  CREEPER: # 苦力怕
-    - '&8[&c☠&8] &6{P} &7被{D}炸死了'
-  SKELETON: # 骷髅
-    - '&8[&c☠&8] &6{P} &7被{D}射了一脸'
-  SPIDER: # 蜘蛛
-    - '&8[&c☠&8] &6{P} &7被{D}咬死了'
-  GIANT: # 巨人僵尸
-    - '&8[&c☠&8] &6{P} &7被{D}踩死了'
-  ZOMBIE: # 僵尸
-    - '&8[&c☠&8] &6{P} &7被{D}吃了'
-    - '&8[&c☠&8] &6{P} &7在跟{D}的搏斗中不慎身亡'
-    - '&8[&c☠&8] &6{P} &7打不过{D}, 也跑不过{D}'
-  SLIME: # 史莱姆
-    - '&8[&c☠&8] &6{P} &7被{D}碾死了'
-  GHAST: # 恶魂
-    - '&8[&c☠&8] &6{P} &7被{D}炸死了'
-  ZOMBIFIED_PIGLIN: # 僵尸猪灵
-    - '&8[&c☠&8] &6{P} &7被{D}吃了'
-  ENDERMAN: # 末影人
-    - '&8[&c☠&8] &6{P} &7被{D}杀死了'
-  CAVE_SPIDER: # 洞穴蜘蛛
-    - '&8[&c☠&8] &6{P} &7被{D}下了毒'
-  SILVERFISH: # 蠹虫
-    - '&8[&c☠&8] &6{P} &7被{D}杀死了'
-  BLAZE: # 烈焰人
-    - '&8[&c☠&8] &6{P} &7被{D}烤焦了'
-  MAGMA_CUBE: # 岩浆怪
-    - '&8[&c☠&8] &6{P} &7被{D}碾死了'
-  ENDER_DRAGON: # 末影龙
-    - '&8[&c☠&8] &6{P} &7被{D}扇飞'
-  WITHER: # 凋灵
-    - '&8[&c☠&8] &6{P} &7被{D}变成了一朵凋零玫瑰'
-  WITCH: # 女巫
-    - '&8[&c☠&8] &6{P} &7被{D}用魔法杀死了'
-  ENDERMITE: # 末影螨
-    - '&8[&c☠&8] &6{P} &7被{D}杀死了'
-  GUARDIAN: # 守卫者
-    - '&8[&c☠&8] &6{P} &7被{D}杀死了'
-  SHULKER: # 潜影贝
-    - '&8[&c☠&8] &6{P} &7被{D}的导弹射♂死了'
-  IRON_GOLEM: # 铁傀儡
-    - '&8[&c☠&8] &6{P} &7被{D}举高高'
-  POLAR_BEAR: # 北极熊
-    - '&8[&c☠&8] &6{P} &7被{D}拍死了'
-  LLAMA: # 羊驼
-    - '&8[&c☠&8] &6{P} &7被{D}用口水喷死'
-  LLAMA_SPIT: # 羊驼的口水(由命令召唤)
-    - '&8[&c☠&8] &6{P} &7被口水淹没, 不知所措'
-  ENDER_CRYSTAL: # 末影水晶
-    - '&8[&c☠&8] &6{P} &7被末影水晶炸死了'
-  PHANTOM: # 幻翼
-    - '&8[&c☠&8] &6{P} &7被{D}呼死了'
-  TRIDENT: # 三叉戟(由命令召唤)
-    - '&8[&c☠&8] &6{P} &7被三叉戟扎死了'
-  PUFFERFISH: # 河豚
-    - '&8[&c☠&8] &6{P} &7被{D}毒死了'
-  DROWNED: # 溺尸
-    - '&8[&c☠&8] &6{P} &7被{D}拖下水'
-  DOLPHIN: # 海豚
-    - '&8[&c☠&8] &6动物之友{P} &7被{D}弄死了'
-  PILLAGER: # 掠夺者
-    - '&8[&c☠&8] &6{P} &7被{D}杀死了'
-  RAVAGER: # 掠夺兽
-    - '&8[&c☠&8] &6{P} &7被{D}拱死了'
-  BEE: # 蜜蜂
-    - '&8[&c☠&8] &6{P} &7被{D}搞蜂了!'
-    - '&8[&c☠&8] &6{P} &7被蛰死了'
-  HOGLIN: # 疣猪兽
-    - '&8[&c☠&8] &6{P} &7被{D}拱死了'
-  PIGLIN: # 猪灵
-    - '&8[&c☠&8] &6{P} &7被&m妹子&r&7{D}杀死了'
-  LIGHTNING: # 闪电
-    - '&8[&c☠&8] &6{P} &7装B被雷劈了'
+  elder_guardian: # 远古守卫者
+    - '&8[&c☠&8] %1$s &7被%2$s&7杀死了'
+  wither_skeleton: # 凋零骷髅
+    - '&8[&c☠&8] %1$s &7被%2$s&7吓死了'
+  stray: # 流浪者
+    - '&8[&c☠&8] %1$s &7被%2$s&7冻住了血液'
+  arrow: # 箭(由发射器射出)
+    - '&8[&c☠&8] %1$s &7被箭射穿'
+    - '&8[&c☠&8] %1$s &7被一箭穿心'
+  fireball: # 火球(由命令召唤)
+    - '&8[&c☠&8] %1$s &7被火球烧死'
+  small_fireball: # 小火球(由发射器射出)
+    - '&8[&c☠&8] %1$s &7被火球烧死'
+  wither_skull: # 飞行的凋灵头颅(由命令召唤)
+    - '&8[&c☠&8] %1$s &7被凋灵头炸死了'
+  husk: # 尸壳
+    - '&8[&c☠&8] %1$s &7被%2$s&7啃成一具空壳'
+  spectral_arrow: # 光灵箭(由发射器射出)
+    - '&8[&c☠&8] %1$s &7被射死了'
+  shulker_bullet: # 潜影贝的导弹(由命令召唤)
+    - '&8[&c☠&8] %1$s &7被导弹射死了'
+  zombie_villager: # 僵尸村民
+    - '&8[&c☠&8] %1$s &7被%2$s&7咬死了'
+  evoker_fangs: # 唤魔者的尖牙(由命令召唤)
+    - '&8[&c☠&8] %1$s &7被尖牙咬到了下体'
+  evoker: # 唤魔者
+    - '&8[&c☠&8] %1$s &7被%2$s&7弄死了'
+  vex: # 恼鬼
+    - '&8[&c☠&8] %1$s &7被%2$s&7烦死了'
+  vindicator: # 卫道士
+    - '&8[&c☠&8] %1$s &7被%2$s&7一斧头劈死'
+  illusioner: # 幻术师
+    - '&8[&c☠&8] %1$s &7被%2$s&7迷惑了双眼'
+  creeper: # 苦力怕
+    - '&8[&c☠&8] %1$s &7被%2$s&7炸死了'
+  skeleton: # 骷髅
+    - '&8[&c☠&8] %1$s &7被%2$s&7百步穿杨'
+  spider: # 蜘蛛
+    - '&8[&c☠&8] %1$s &7被%2$s&7咬死了'
+  giant: # 巨人僵尸
+    - '&8[&c☠&8] %1$s &7被%2$s&7踩死了'
+  zombie: # 僵尸
+    - '&8[&c☠&8] %1$s &7被%2$s&7吃了'
+    - '&8[&c☠&8] %1$s &7在跟%2$s&7的搏斗中不慎身亡'
+    - '&8[&c☠&8] %1$s &7打不过%2$s&7, 也跑不过%2$s&7'
+  slime: # 史莱姆
+    - '&8[&c☠&8] %1$s &7被%2$s&7碾死了'
+  ghast: # 恶魂
+    - '&8[&c☠&8] %1$s &7被%2$s&7炸死了'
+  zombified_piglin: # 僵尸猪灵
+    - '&8[&c☠&8] %1$s &7被%2$s&7吃了'
+  enderman: # 末影人
+    - '&8[&c☠&8] %1$s &7被%2$s&7杀死了'
+  cave_spider: # 洞穴蜘蛛
+    - '&8[&c☠&8] %1$s &7被%2$s&7下了毒'
+  silverfish: # 蠹虫
+    - '&8[&c☠&8] %1$s &7被%2$s&7杀死了'
+  blaze: # 烈焰人
+    - '&8[&c☠&8] %1$s &7被%2$s&7烤焦了'
+  magma_cube: # 岩浆怪
+    - '&8[&c☠&8] %1$s &7被%2$s&7碾死了'
+  ender_dragon: # 末影龙
+    - '&8[&c☠&8] %1$s &7被%2$s&7扇飞'
+  wither: # 凋灵
+    - '&8[&c☠&8] %1$s &7被%2$s&7变成了一朵凋零玫瑰'
+  witch: # 女巫
+    - '&8[&c☠&8] %1$s &7被%2$s&7用魔法杀死了'
+  endermite: # 末影螨
+    - '&8[&c☠&8] %1$s &7被%2$s&7杀死了'
+  guardian: # 守卫者
+    - '&8[&c☠&8] %1$s &7被%2$s&7杀死了'
+  shulker: # 潜影贝
+    - '&8[&c☠&8] %1$s &7被%2$s&7的导弹射♂死了'
+  iron_golem: # 铁傀儡
+    - '&8[&c☠&8] %1$s &7被%2$s&7举高高'
+  polar_bear: # 北极熊
+    - '&8[&c☠&8] %1$s &7被%2$s&7拍死了'
+  llama: # 羊驼
+    - '&8[&c☠&8] %1$s &7被%2$s&7用口水喷死'
+  llama_spit: # 羊驼的口水(由命令召唤)
+    - '&8[&c☠&8] %1$s &7被口水淹没, 不知所措'
+  ender_crystal: # 末影水晶
+    - '&8[&c☠&8] %1$s &7被末影水晶炸死了'
+  phantom: # 幻翼
+    - '&8[&c☠&8] %1$s &7被%2$s&7呼死了'
+  trident: # 三叉戟(由命令召唤)
+    - '&8[&c☠&8] %1$s &7被三叉戟扎死了'
+  pufferfish: # 河豚
+    - '&8[&c☠&8] %1$s &7被%2$s&7毒死了'
+  drowned: # 溺尸
+    - '&8[&c☠&8] %1$s &7被%2$s&7拖下水'
+  dolphin: # 海豚
+    - '&8[&c☠&8] 动物之友%1$s &7被%2$s&7弄死了'
+  pillager: # 掠夺者
+    - '&8[&c☠&8] %1$s &7被%2$s&7杀死了'
+  ravager: # 掠夺兽
+    - '&8[&c☠&8] %1$s &7被%2$s&7拱死了'
+  bee: # 蜜蜂
+    - '&8[&c☠&8] %1$s &7被%2$s&7搞蜂了!'
+    - '&8[&c☠&8] %1$s &7被蛰死了'
+  hoglin: # 疣猪兽
+    - '&8[&c☠&8] %1$s &7被%2$s&7拱死了'
+  piglin: # 猪灵
+    - '&8[&c☠&8] %1$s &7被&m妹子&7%2$s&7杀死了'
+  lightning: # 闪电
+    - '&8[&c☠&8] %1$s &7装B被雷劈了'

@@ -1,7 +1,7 @@
 package io.github.itsflicker.death.data
 
+import com.comphenix.protocol.utility.StreamSerializer
 import com.google.gson.*
-import com.google.gson.reflect.TypeToken
 import org.bukkit.Bukkit
 import org.bukkit.Location
 import org.bukkit.inventory.ItemStack
@@ -14,19 +14,14 @@ val gson: Gson = GsonBuilder().apply {
     excludeFieldsWithoutExposeAnnotation()
     registerTypeAdapter(
         ItemStack::class.java,
-        JsonSerializer<ItemStack> { src, typeOfSrc, context ->
-            Gson().toJsonTree(src.serialize())
+        JsonSerializer<ItemStack> { src, _, _ ->
+            JsonPrimitive(StreamSerializer.getDefault().serializeItemStack(src))
         }
     )
     registerTypeAdapter(
         ItemStack::class.java,
-        JsonDeserializer { json, typeOfT, context ->
-            ItemStack.deserialize(
-                Gson().fromJson(
-                    json,
-                    object : TypeToken<MutableMap<String, Any>>() {}.type
-                )
-            )
+        JsonDeserializer { json, _, _ ->
+            StreamSerializer.getDefault().deserializeItemStack(json.asString)
         }
     )
     registerTypeAdapter(
@@ -43,7 +38,7 @@ val gson: Gson = GsonBuilder().apply {
     )
 }.create()
 
-private fun toLocation(source: String): Location {
+fun toLocation(source: String): Location {
     return source.replace("__", ".").split(",").run {
         Location(
             Bukkit.getWorld(get(0)),
@@ -54,7 +49,7 @@ private fun toLocation(source: String): Location {
     }
 }
 
-private fun fromLocation(location: Location): String {
+fun fromLocation(location: Location): String {
     return "${location.world?.name},${location.x},${location.y},${location.z}".replace(".", "__")
 }
 
